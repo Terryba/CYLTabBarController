@@ -69,6 +69,8 @@
     
     [button setImage:[UIImage imageNamed:@"post_normal"] forState:UIControlStateNormal];
     [button setTitle:@"发布" forState:UIControlStateNormal];
+    // 中间的按钮image不被拉伸（恢复圆形）
+    button.imageView.contentMode = UIViewContentModeScaleAspectFit;
     
     [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont systemFontOfSize:9.5];
